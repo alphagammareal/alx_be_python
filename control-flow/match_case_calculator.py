@@ -1,10 +1,10 @@
 # Prompt for user input
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-symb = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 
 # Perform the calculation using match case
-match symb:
+match operation:
     case "+":
         results = num1 + num2
         print("The result is ", results)
@@ -21,4 +21,5 @@ match symb:
             results = num1 / num2
             print("The result is ", results)
     case _:
-        print("Invalid Symbol")
+        print("Invalid Operation")
+    
