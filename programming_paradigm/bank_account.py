@@ -7,14 +7,14 @@ class BankAccount:
     # Deposit
     def deposit(self, amount):
         self.account_balance += amount
-        return self.account_balance
+         return f"Deposited: ${amount:.2f}"
 
     # Withdraw
     def withdraw(self, amount):
         if amount <= self.account_balance:
             self.account_balance -= amount
             return f"Withdrew: ${amount:.2f}"
-        elif amount > self.account_balance:
+        else:
             return "Insufficient funds."
 
     # display Balnce
